@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>header</title>
+</head>
+<body>
+<header style="position:fixed; top:0px; left:0px; width:100%; height:70px; text-align:center; line-height:70px; background-color:black; color:white; font-size:30px">골프연습장 회원관리 프로그램 ver 1.0</header>
+
+<nav style="position:fixed; top:70px; left:0px; width:100%; height: 30px; line-height:30px; background-color:gray; color:white; padding-left:20px">
+<a href="teacher.jsp">강사조회</a> &nbsp; &nbsp;
+<a href="sign.jsp">수강신청</a> &nbsp; &nbsp;
+<a href="member.jsp">회원정보조회</a> &nbsp; &nbsp;
+<a href="sale.jsp">강사매출현황</a> &nbsp; &nbsp;
+<a href="index.jsp">홈으로</a>
+</nav>
+</body>
+</html>

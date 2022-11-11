@@ -1,0 +1,35 @@
+function nameChange(){
+	document.frm.c_no.value = document.frm.c_name.value;
+	document.frm.teacher_code.value = "";
+	document.frm.class_price.value="";
+}
+
+function price(){
+	if(document.frm.c_no.value >= 20000)
+		document.frm.class_price.value = document.frm.teacher_code.value * 1000 / 2
+	else
+		document.frm.class_price.value = document.frm.teacher_code.value * 1000;
+}
+
+function addCheck(){
+	if(frm.regist_month.value.length == 0){
+		alert("수강월이 입력되지 않았습니다.");
+		document.regist_month.focus();
+		return false;
+	}
+	else if(frm.c_name.value.length == 0){
+		alert("회원명이 입력되지 않았습니다.");
+		document.c_name.focus();
+		return false;
+	}
+	else if(frm.class_area.value.length == 0){
+		alert("강의장소가 입력되지 않았습니다.");
+		document.class_area.focus();
+		return false;
+	}
+	else if(frm.teacher_code.value.length == 0){
+		alert("강사명이 입력되지 않았습니다.");
+		document.teacher_code.focus();
+		return false;
+	}
+}

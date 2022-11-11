@@ -1,0 +1,3 @@
+function nameChange(){
+	document.frm.c_no.value = document.frm.c_name.value;
+}

@@ -1,0 +1,12 @@
+function nameChange(){
+	document.frm.c_no.value = document.frm.c_name.value;
+	document.frm.teacher_code.value = "";
+	document.frm.class_price.value="";
+}
+
+function price(){
+	if(document.frm.c_no.value >= 20000)
+		document.frm.class_price.value = document.frm.teacher_code.value * 1000 / 2
+	else
+		document.frm.class_price.value = document.frm.teacher_code.value * 1000;
+}
